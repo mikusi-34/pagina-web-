@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+}
+
+video {
+    position: fixed; 
+
+    min-width:  100%;
+    min-height: 100%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-50%);
+
+    z-index: -1;
+}
+
+body {
+    text-align: center;
+}
+h1{
+    display: inline-block;
+    position: relative;
+}
+
+h1::after,h1::before {
+   content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: white;
+    top: 0.6em;
+}
+ h1::before{
+    left: -120px;
+ }
+ h1::after{
+    right: -140px;
+ }
+ 
+ main{
+    width: 40%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    margin: 5%;
+ }
+
+ .color {
+    color: white;
+ }
+
+ h2{
+    color: white;
+    text-shadow: 1px 2px 2px white, 0 0 25px blue, 0 0 5px blue;
+    text-align: center;
+ }
+
+ div.galeria{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0  rgba(0, 0, 0, 0.19);
+    float: left;
+    width: 250px;
+ }
+
+ div.galeria img{
+    width: 60%;
+    height: 50%;
+ }
+  div.galeria:hover{
+    border: 1px solid lightcoral;
+    transform: rotate(-3deg);
+  }
+
+  div.pie{
+    text-align: center;
+    text-shadow: 2px 2px 5px  aqua;
+    padding: 10px;
+  }
+
+  .btn {
+   display: grid;
+   place-items: center;
+   background: #e3edf7;
+   padding: 1.4em;
+   border-radius: 10px;
+   box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+          -6px -6px 10px -1px rgba(255,255,255,0.7);
+   border: 1px solid rgba(0,0,0,0);
+   cursor: pointer;
+   transition: transform 0.5s;
+ }
+ 
+ .btn:hover {
+   box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+          inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+          -0.5px -0.5px 0px rgba(255,255,255,1),
+          0.5px 0.5px 0px rgba(0,0,0,0.15),
+          0px 12px 10px -10px rgba(0,0,0,0.05);
+   border: 1px solid rgba(0,0,0,0.1);
+   transform: translateY(0.5em);
+ }
+ 
+ .btn svg {
+   transition: transform 0.5s;
+ }
+ 
+ .btn:hover svg {
+   transform: scale(0.9);
+   fill: #333333;
+ }
+
+
+@media screen and (max-width: 767px) {
+  ...
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  ...
+}
+
+@media screen and (min-width: 1024px) {
+  ...
+}
